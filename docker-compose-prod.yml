@@ -1,0 +1,9 @@
+version: '3.3'
+services:
+  frontend:
+    image: bragelonne/234-deploylab-frontend:latest
+    pull_policy: always
+    ports:
+      - "9999:80"
+  environment:
+    - APP_ENV=production
